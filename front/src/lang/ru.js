@@ -1,35 +1,35 @@
 export default {
   header: {
-    index: 'Home',
-    about: 'About',
-    cheaters: 'Cheaters',
-    report: 'Report',
-    signin: 'SignIn',
-    signup: 'SignUp',
-    signout: 'SignOut',
+    index: 'Главная',
+    about: 'О Нас',
+    cheaters: 'Читеры',
+    report: 'Сообщить',
+    signin: 'Войти',
+    signup: 'Зарегестрироваться',
+    signout: 'Выйти',
     daily: 'BanDaily',
     dashboard: 'Dashboard',
-    searchBar: 'Supports searching previous origin ID\'s...',
-    searchInfo: 'The retrieved ID\'s for: ',
-    searchResult: 'Search Results:',
-    search: 'Search',
-    none: 'nothing found.',
-    signoutSuccess: 'Signout successful',
+    searchBar: 'Поиск по Origin ID (и предыдущему ID)...',
+    searchInfo: 'Результат поиска по ID для: ',
+    searchResult: 'Результат поиска:',
+    search: 'Поиск',
+    none: 'ничего не найдено.',
+    signoutSuccess: 'Выход произведён успешно',
   },
   detail:{
     info:{
-      viewTimes:'Views',
-      reply:'Reply',
-      reportedGames:'Reported game:',
-      gameScores:'Score track link:',
-      firstReportTime:'Firstly reported date:',
-      recentUpdateTime:'Recently update time:',
-      originAvatar:'Origin avatar:',
-      historyID:'History ID:',
-      dealRecord:'Admin operated records：',
-      discription1:'If you found could not visit battlefieldtracker or he changed Origin ID,please Click',
-      updateButton:'Update',
-      discription2:'bfban.com can track hacker newest ID',
+      viewTimes:'Просмотров',
+      reply:'Ответить',
+      reportedGames:'В игре:',
+      gameScores:'Ссылка на статистику:',
+      firstReportTime:'Дата первого репорта:',
+      recentUpdateTime:'Последнее время обновления:',
+      originAvatar:'Origin аватар:',
+      historyID:'ID Истории:',
+      dealRecord:'Записи администратора：',
+      discription1:'Если не удаётся посетить battlefieldtracker или он сменил Origin ID, нажмите',
+      updateButton:'Обновить',
+      discription2:'bfban.com может отслеживать новый ID игрока',
       discription3:'server can update hacker who is on the list on schedule',
       discription4:'history ID which they used before can be found too',
       timeLine:'Time line',
@@ -155,36 +155,36 @@ export default {
       gameTogether: 'Game Together',
     },
     bulletin: {
-      title: 'Bulletin',
-      webDev: 'Web developer',
-      bfbanAppD: 'BFBAN app download',
+      title: 'Информация',
+      webDev: 'Веб разработчик',
+      bfbanAppD: 'Скачать приложение BFBAN',
       japCon: 'Japanese translation contributor',
       engCon: 'English translation contributor',
-      domCost: 'Domain cost',
+      domCost: 'Оплата домена',
     }
   },
   about: {
-    title: 'About',
+    title: 'О нас',
     description: `<h2>BFBAN</h2>
     <p>
-    created at 2018.1.29; It is an organisation created to fight <b>against hackers</b>
+    cсоздан 2018.1.29; Организация, созданная <b>в противовес хакерам</b>
     </p>
 
     <p>
-      Staff members in bfban include:
+      Состав управления bfban включает:
     </p>
     <ul style="padding: .5rem 1rem .5rem;">
-      <li>Server owners</li>
-      <li>Clan's leaders</li>
-      <li>Bf1 streamers</li>
+      <li>Владельцев серверов</li>
+      <li>Лидеров кланов</li>
+      <li>Bf1 стримеров</li>
     </ul>`,
     clanInfo: `
     <p>
-      <b>Currently, there are {clans} clans that joined: </b>
-      (Search <b>LB</b> and you can find the server that joined bfban)
+      <b>На данный момент всего {clans} кланов присоединились: </b>
+      (Ищите <b>LB</b> чтобы найти сервера присоеденившиеся bfban)
     </p>`,
     website: `
-    <h2>bfban.com website</h2>
+    <h2>Сайт bfban.com</h2>
     <p>
       <a href="https://bfban.com">bfban.com</a>  relies on bfban Bureau of Investigations, the original idea originated from enthusiastic players, it is developed by <a target="_blank" href="https://mygoare.com">mygoare</a> and launched on November 4, 2018
     </p>
