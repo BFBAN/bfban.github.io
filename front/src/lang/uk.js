@@ -138,6 +138,7 @@ export default {
           bfban: '[Recommended] BFBAN APP',
           apiGametools: 'api.gametools.network',
           botGametools: 'top.gg/bot/714524944783900794',
+          serverManager: 'manager.gametools.network',
         },
         description: {
           bftracker: 'Online record query website, you can query various data in detail',
@@ -148,6 +149,7 @@ export default {
           bfban: 'BFBAN mobile client',
           apiGametools: 'Public api for the Battlefield series',
           botGametools: 'Discord stats bot for the Battlefield series',
+          serverManager: 'BF1 servermanager, this tool can also autokick people marked as hacker within bfban.com',
         }
       },
       qqGroup: 'QQ group/Discord',

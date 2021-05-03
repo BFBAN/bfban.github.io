@@ -114,6 +114,12 @@
           </a>
           {{$t("home.howToUse.tools.description.botGametools")}}
         </p>
+        <p>
+          <a target="_blank" href="https://manager.gametools.network/">
+            {{$t("home.howToUse.tools.name.serverManager")}}
+          </a>
+          {{$t("home.howToUse.tools.description.serverManager")}}
+        </p>
       </div>
 
 <br>

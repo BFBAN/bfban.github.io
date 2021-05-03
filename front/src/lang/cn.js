@@ -138,6 +138,7 @@ export default {
           bfban: '【推荐】BFBAN APP',
           apiGametools: 'api.gametools.network',
           botGametools: 'top.gg/bot/714524944783900794',
+          serverManager: 'manager.gametools.network',
         },
         description: {
           bftracker: '在线战绩查询网站，可以详细查询到各类数据',
@@ -148,6 +149,7 @@ export default {
           bfban: 'BFBAN手机客户端',
           apiGametools: '《战地风云》系列的公共API',
           botGametools: '《战地风云》系列的Discord统计机器人',
+          serverManager: 'BF1服务器管理器，此工具还可以自动踢bfban.com中标记为黑客的人',
         }
       },
       qqGroup: 'QQ群/Discord',

@@ -138,6 +138,7 @@ export default {
           bfban: '【推奨】BFBANアプリ',
           apiGametools: 'api.gametools.network',
           botGametools: 'top.gg/bot/714524944783900794',
+          serverManager: 'manager.gametools.network',
         },
         description: {
           bftracker: 'オンライン記録クエリWebサイトでは、さまざまなデータを詳細にクエリできます',
@@ -148,6 +149,7 @@ export default {
           bfban: 'BFBANモバイルクライアント',
           apiGametools: 'バトルフィールドシリーズのパブリックAPI',
           botGametools: 'バトルフィールドシリーズの不和統計ボット',
+          serverManager: 'BF1サーバーマネージャー、このツールは、bfban.com内でハッカーとしてマークされた人々を自動キックすることもできます',
         }
       },
       qqGroup: 'QQグループ/Discord',
