@@ -12,7 +12,7 @@
         Made with <Icon type="ios-heart" color="#ed4014" />
 
         Hosted at
-        <a target="_blank" href="https://bandofbrothers.site/">BoB</a>
+        <a target="_blank" href="https://gametools.network/">GameTools-Community Network</a>
       </p>
       <p>
         &copy; 2018-2021
