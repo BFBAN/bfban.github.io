@@ -1,10 +1,13 @@
 <template>
   <div class="container">
     <Bulletin />
-    <div class="content">
+    <div class="content" style="position: relative;">
       <Divider>{{$t("home.activity.title")}}</Divider>
 
       <p v-html="$t('home.activity.description', { report: site.report, cheater: site.cheater })"></p>
+      <Spin fix v-show="!activities.length">
+        <Icon type="ios-loading" size=24 class="spin-icon-load"></Icon>
+      </Spin>
       <table>
         <tbody>
           <tr v-for="activity in activities" :key="activity.id">
@@ -137,9 +140,6 @@
       </div>
     </div>
   </div>
-
-
-
 </template>
 
 <script>
@@ -202,3 +202,8 @@
 }
 </script>
 
+<style lang="scss" scoped>
+  .spin-icon-load {
+    animation: ani-demo-spin 1s linear infinite;
+  }
+</style>
