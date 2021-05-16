@@ -19,7 +19,7 @@ export default {
   detail:{
     info:{
       viewTimes:'Görüntülenme',
-      reply:'Yorumlar',
+      reply:'Yorum yap',
       reportedGames:'Bildirilen oyun:',
       gameScores:'Oyuncu istatistik bağlantıları:',
       firstReportTime:'ilk raporlama zamanı:',
@@ -27,8 +27,8 @@ export default {
       originAvatar:'Origin avatar:',
       historyID:'Geçmiş kullanıcı adı:',
       dealRecord:'Yönetici tarafından işlenen kayıtlar：',
-      discription1:'Battlefieldtracker\' da bulunamadı veya Origin ismi değiştirdi ise,lütfen tıklayın',
-      updateButton:'Güncelle',
+      discription1:'Battlefieldtracker\' da bulunamadı veya Origin ismi değiştirdi ise,güncellemek için',
+      updateButton:'tıklayın',
       discription2:'bfban.com hilecinin güncel origin ismini takip edilebilir',
       discription3:'sunucu, programa göre listede bulunan hileciyi güncelleyebilir',
       discription4:'daha önce kullandıkları geçmiş kimliği de bulunabilir',
@@ -56,7 +56,7 @@ export default {
       choice2:'Şüpheli oyuncu',
       choice3:'Temiz Oyuncu',
       choice4:'Çöp kutusuna yolla',
-      commit:'Onaylanmış',
+      commit:'Gönder',
       replyManual4:'Cevap vermek için giriş yapmalısınız',
       action: 'Aksiyon',
       operatingTime: 'Operasyon zamanı',
@@ -79,20 +79,20 @@ export default {
 	  	bf1:'battlefield 1',
 	  	bfv:'battlefield 5',
 	  	idNotion1:'Bir seferde yalnızca bir kimliği bildirebilirsiniz, klan adını yazmayın, kendi origin kimliğinizi yazmayın.',
-	  	idNotion2:'Orijin kimliğinin küçük harf ve büyük harf için eşleşmesi yoktur ， ancak tanımlamalısınız i I 1 l L o O 0 ， doğru kimliği sunun',
+	  	idNotion2:'Orijin kimliğinin küçük harf ve büyük harf için eşleşmesi yoktur， ancak tanımlamalısınız i I 1 l L o O 0， bu karakterlere dikkat ediniz.',
 	  	uploadManual1:'Bilibili ve Youtube gibi video sitelerine üye olmak istemiyorsanız şu adrese gidebilirsiniz',
 	  	uploadManual2:'ve ardından video bağlantısını aşağıya yapıştırın',
 	  	uploadManual3:'videonuzu Bilibili, Youtube, Youku, Tudou ve daha fazlasıyla sunabilirsiniz',
 	  	uploadPic1:'Png, jpg, jpeg, gif gibi ekran görüntüsü türlerini yüklemenizi öneririz.',
 	  	uploadPic2:'2M\'den büyük resim yüklenemez,buradan',
 	  	uploadPic3:'ve sonra Resim URL Etiketi\'ni seçin ， aşağıdaki resim bağlantısını yapıştırın',
-	  	uploadPic4:'lütfen bu bilgisayar korsanı için kanıt içeren bir açıklama yapın ， Metin düzenleyici resim yükleme hizmeti sunar（Boyut limiti:2M）',
-	  	getCaptcha:'doğrulama kodu',
+	  	uploadPic4:'lütfen bu bilgisayar korsanı için kanıt içeren bir açıklama yapın， Metin düzenleyici resim yükleme hizmeti sunar（Boyut limiti:2M）',
+	  	getCaptcha:'Yeni kod',
 	  	report:'Raporla',
       description: 'Bildirilen kişi hakkında elinizde bulunan kanıtları ekleyin lütfen',
-      captcha: 'dogrulama kodunu yazınız',
+      captcha: 'Onay kodu',
       required: 'gereklidir',
-      onlyOneId: 'tek seferdetek origin kimliği',
+      onlyOneId: 'Bir seferde tek origin kimliği',
 	  },
     labels: {
       cheatMethod: 'Hile yöntemi',
@@ -113,20 +113,20 @@ export default {
   home: {
     activity: {
       title: 'Aktivite',
-      description: 'bfban.com 4 Kasım 2018\'de yapıldı ve <b> {report} </b> raporları aldı, ve toplam <b> {cheater} </b> hileci yasaklandı. Sıkı çalışma için herkese teşekkürler!',
+      description: 'bfban.com 4 Kasım 2018\'de yapıldı ve <b> {report} </b> rapor aldı, toplam <b> {cheater} </b> hileci yasaklandı. Sıkı çalışma için herkese teşekkürler!',
       activities: {
-        report: 'bildirildi',
-        join: 'bfban\'a kayıtlı, hoş geldiniz!',
+        report: 'bildirdi',
+        join: 'bfban\'a kayıt oldu, hoş geldiniz!',
         admin: 'Yönetici',
-        mark: 'işaretlenmiş',
-        as: 'as'
+        mark: 'kararı',
+        as: 'için'
       }
     },
     howToUse: {
       title: 'Nasıl kullanılır',
-      description: `<a href="https://bfban.com">This site</a> bir oyuncunun kimliğini <b> kalıcı olarak izleyebilir </b>, ve ayrıca <b> kimlik geçmişinin aranmasını </b> destekliyoruz! hilecileri herkese bildirebiliriz.
-      <p>bir hileci varsa şunları yapabilirsiniz:</p>
-      <p>1. Bilgisayar korsanını dice rapor etmek için bf1 rapor yardımını kullanın</p>
+      description: `<a href="https://bfban.com">Bu site</a> bir oyuncunun kimliğini <b> kalıcı olarak izleyebilir</b>, ve ayrıca <b> kimlik geçmişinin aranmasını </b> destekliyoruz! hilecileri herkese bildirebilir.
+      <p>Bir hileci varsa şunları yapabilirsiniz:</p>
+      <p>1. Hilecileri dice rapor etmek için <a target="_blank" href="https://bf1.mygoare.com/">bf1 rapor yardımını</a> kullanın</p>
       <p>2. <router-link :to="{path: 'signup'}">Web sitesine kaydolun</router-link> ve <router-link :to="{path: 'report'}">bfban bildirin</router-link></p>
       <p>3. Kullanıcı kimliği kaydedilecektir. Kimliğini değiştirse bile onu bulabiliriz.</p>`,
       tools: {
@@ -143,8 +143,8 @@ export default {
         description: {
           bftracker: 'Çevrimiçi kayıt sorgulama web sitesi, çeşitli verileri ayrıntılı olarak sorgulayabilirsiniz',
           report: 'Çevrimiçi rapor metni oluşturun',
-          fairplay: 'oyuncunun zaten bf3 ve bf4\'te yasaklanmış olup olmadığını kontrol edin',
-          tracker: 'Aynı zamanda bilgisayar ve cep telefonunda hızlı kayıt sorgulama ve işaretlemeyi destekler',
+          fairplay: 'oyuncunun bf3 ve bf4\'te yasaklanmış olup olmadığını kontrol edin',
+          tracker: 'Aynı zamanda bilgisayar ve cep telefonunda hızlı kayıt sorgulama ve karar verme imkanı sunar',
           tools: 'Oyun platformu sorunlarını çözmenize yardımcı olacak araçlar',
           bfban: 'BFBAN mobil uygulaması',
           apiGametools: 'Battlefield serisi için herkese açık API',
@@ -157,7 +157,7 @@ export default {
       gameTogether: 'Game Together',
     },
     bulletin: {
-      title: 'Bulletin',
+      title: 'Emeği geçenler',
       webDev: 'Web geliştiricisi',
       bfbanAppD: 'BFBAN mobil uygulaması ',
       japCon: 'Japonca çeviri katkısı',
@@ -188,11 +188,11 @@ export default {
     website: `
     <h2>bfban.com website</h2>
     <p>
-      <a href="https://bfban.com">bfban.com</a>  tutkulu oyunculardan çıkan orijinal fikir olan bfban Bureau of Investigations'a güveniyor, tarafından geliştirildi <a target="_blank" href="https://mygoare.com">mygoare</a> ve 4 Kasım 2018'de kullanıma sunuldu
+      <a href="https://bfban.com">bfban.com</a>  tutkulu oyunculardan çıkan orijinal fikir olan bfban Bureau of Investigations'a güveniyor, <a target="_blank" href="https://mygoare.com">mygoare</a> tarafından geliştirildi ve 4 Kasım 2018'de kullanıma sunuldu
     </p>
     <p>Bfban, çoğunlukla oyuncuları rapor etmek ve bir oyuncunun hacker olup olmadığını tartışmak için kullanılır.</p>`,
     contact: `
-    <h2>İtirazlar için</h2>
+    <h2>Ban İtirazı</h2>
     <p>Lütfen vakanın web sayfa bağlantısını ve itirazınızı ban-appeals@bfban.com adresine gönderin.</p>
     <br/>
     <h2>Bize Ulaşın</h2>
@@ -240,8 +240,8 @@ export default {
     form: {
       username: 'Kullanıcı adı',
       password: 'Parola',
-      captcha: 'Onay kodunu yazınız',
-      getCaptcha: 'Onay Kodu',
+      captcha: 'Onay kodu',
+      getCaptcha: 'Yeni kod',
       submit: 'Giriş',
       submitHint: 'bir hesaba sahip değilim? Kayıt ol',
     },
@@ -256,8 +256,8 @@ export default {
       password: 'Parola',
       originId: 'originId',
       qq: 'QQ',
-      captcha: 'Onay kodunu yazınız',
-      getCaptcha: 'Onay kodu',
+      captcha: 'Onay kodu',
+      getCaptcha: 'Yeni kod',
       submit: 'Kayıt',
       submitHint: 'Hesabım var? Giriş Yap',
     },
@@ -280,7 +280,7 @@ export default {
       status: {
         all: 'Hepsi',
       },
-      refresh: 'yenilemek',
+      refresh: 'Yenile',
     },
     reportTime: 'Rapor zaman aralığı',
     updateTime: 'Zaman aralığını güncelle',
