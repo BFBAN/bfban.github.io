@@ -300,7 +300,7 @@ function replaceImgSrcToDataSrc(str) {
 }
 
 function detectLanguage(lang) {
-  return ['zh-CN', 'en-US', 'ja-JP', 'ru-RU'].filter(el => el.indexOf(lang) !== -1)[0];
+  return ['zh-CN', 'en-US', 'ja-JP', 'ru-RU', 'tr-TR'].filter(el => el.indexOf(lang) !== -1)[0];
 }
 
 
