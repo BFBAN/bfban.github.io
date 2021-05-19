@@ -31,7 +31,7 @@ function verifyJWT(req, res, next) {
       next();
     })
     .catch((err) => {
-      // next(err);
+      next(err);
       return res
         .status(401)
         .json({

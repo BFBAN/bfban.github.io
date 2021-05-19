@@ -119,7 +119,8 @@
       handleMiscChange: function(h) {
         this.formItem.description = h;
       },
-      doReport(e) {
+      doReport: function (e) {
+
         // check form data
         if (checkReportFormData.call(this, this.formItem) === false) return false;
         if (this.checkVideoAndImg() === false) return false;
@@ -129,7 +130,6 @@
           id: trimAllWhitespace(this.formItem.originId)
         })
         .then(async (res) => {
-
           const d = res.data;
           const idExist = d.idExist;
 
@@ -147,7 +147,11 @@
 
           this.formItem.captcha = '';
           this.refreshCaptcha();
-        });
+        })
+        .catch(e => {
+          this.$Message.error('Expired, plz signIn');
+          this.spinShow = false;
+        })
       },
       handleReport: function() {
         this.spinShow = true;
