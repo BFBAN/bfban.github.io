@@ -54,6 +54,7 @@ const cheatMethodsGlossary = [
     "en-US": 'Stealth',
     "ja-JP": 'ステルス',
     "ru-RU": 'Стелс',
+    "tr-TR": 'Görünmezlik',
   },
   {
     value: 'wallhack',
@@ -61,6 +62,7 @@ const cheatMethodsGlossary = [
     "en-US": 'Wallhack',
     "ja-JP": '視点',
     "ru-RU": 'Валхак',
+    "tr-TR": 'Wallhack',
   },
   {
     value: 'aimbot',
@@ -68,6 +70,7 @@ const cheatMethodsGlossary = [
     "en-US": 'Aimbot',
     "ja-JP": '自己照準',
     "ru-RU": 'Аимбот',
+    "tr-TR": 'Aimbot',
   },
   {
     value: 'oneShotKill',
@@ -75,6 +78,7 @@ const cheatMethodsGlossary = [
     "en-US": 'Oneshot kill',
     "ja-JP": 'スパイク',
     "ru-RU": 'Моментальное убийство',
+    "tr-TR": 'Tek vuruş öldürme',
   },
   {
     value: 'gadgetModify',
@@ -82,6 +86,7 @@ const cheatMethodsGlossary = [
     "en-US": 'Modified gadget',
     "ja-JP": '機器の交換',
     "ru-RU": 'Модифицированный гаджет',
+    "tr-TR": 'Farkli kit kullanma',
   },
   {
     value: 'damageChange',
@@ -89,6 +94,7 @@ const cheatMethodsGlossary = [
     "en-US": 'Damagemodifier',
     "ja-JP": '怪我を変える',
     "ru-RU": 'Модифицированный урон',
+    "tr-TR": 'Hasarı degiştirme',
   },
   {
     value: 'shootingThroughWalls',
@@ -96,6 +102,7 @@ const cheatMethodsGlossary = [
     "en-US": 'Shooting through walls',
     "ja-JP": '壁を突き抜ける弾丸',
     "ru-RU": 'Стреляет через стены',
+    "tr-TR": 'Duvar arkası vurma',
   },
 ];
 
@@ -123,6 +130,7 @@ const cheaterStatus = [
     "en-US": 'Processing',
     "ja-JP": '未処理',
     "ru-RU": 'В процессе',
+    "tr-TR": 'İşleniyor',
   },
   {
     value: '5',
@@ -130,6 +138,7 @@ const cheaterStatus = [
     "en-US": 'Under discussion',
     "ja-JP": 'ディスカッションに返信する',
     "ru-RU": 'Обсуждается',
+    "tr-TR": 'Tartışılıyor',
   },
   {
     value: '6',
@@ -137,6 +146,7 @@ const cheaterStatus = [
     "en-US": 'Waiting for management cofirmation',
     "ja-JP": '管理者の確認を待っています',
     "ru-RU": 'Ожидает подтверждения менаджером',
+    "tr-TR": 'Yönetici onayı bekleniyor',
   },
   {
     value: '1',
@@ -144,6 +154,7 @@ const cheaterStatus = [
     "en-US": 'Confirmed hacker',
     "ja-JP": 'ストーンハンマーだと思う',
     "ru-RU": 'Подтверждённый хакер',
+    "tr-TR": 'Onaylanmış hileci',
   },
   {
     value: '2',
@@ -151,6 +162,7 @@ const cheaterStatus = [
     "en-US": 'Suspicious player',
     "ja-JP": '再び容疑者',
     "ru-RU": 'Подозрительный игрок',
+    "tr-TR": 'Şüpheli oyuncu',
   },
   {
     value: '3',
@@ -158,6 +170,7 @@ const cheaterStatus = [
     "en-US": 'Innocent clean player',
     "ja-JP": '開いていないと思う',
     "ru-RU": 'Честный игрок',
+    "tr-TR": 'Temiz oyuncu',
   },
   {
     value: '4',
@@ -165,6 +178,7 @@ const cheaterStatus = [
     "en-US": 'Trash',
     "ja-JP": 'ごみ箱',
     "ru-RU": 'Мусор',
+    "tr-TR": 'Çöp',
   },
 ];
 
@@ -175,6 +189,7 @@ const gameName = [
     "en-US": 'Battlefield 1',
     "ja-JP": 'バトルフィールド1',
     "ru-RU": 'Battlefield 1',
+    "tr-TR": 'Battlefield 1',
   },
   {
     value: 'bfv',
@@ -182,6 +197,7 @@ const gameName = [
     "en-US": 'Battlefield 5',
     "ja-JP": 'バトルフィールドV',
     "ru-RU": 'Battlefield 5',
+    "tr-TR": 'Battlefield 5',
   },
 ];
 
@@ -284,7 +300,7 @@ function replaceImgSrcToDataSrc(str) {
 }
 
 function detectLanguage(lang) {
-  return ['zh-CN', 'en-US', 'ja-JP', 'ru-RU'].filter(el => el.indexOf(lang) !== -1)[0];
+  return ['zh-CN', 'en-US', 'ja-JP', 'ru-RU', 'tr-TR'].filter(el => el.indexOf(lang) !== -1)[0];
 }
 
 

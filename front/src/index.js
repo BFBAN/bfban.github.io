@@ -17,6 +17,7 @@ import cn from '@/lang/cn';
 import uk from '@/lang/uk';
 import ru from '@/lang/ru';
 import jp from '@/lang/jp';
+import tr from '@/lang/tr';
 
 import router from '@/router';
 import store from '@/store';
@@ -37,6 +38,7 @@ const messages = {
   'en-US': Object.assign(uk, iview.langs['en-US']),
   'ja-JP': Object.assign(jp, iview.langs['ja-JP']),
   'ru-RU': Object.assign(ru, iview.langs['ru-RU']),
+  'tr-TR': Object.assign(tr, iview.langs['tr-TR']),
 };
 
 const i18n = new VueI18n({

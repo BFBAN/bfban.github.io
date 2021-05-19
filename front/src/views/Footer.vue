@@ -32,6 +32,7 @@ export default {
         {value: 'en-US', label: 'English'},
         {value: 'ja-JP', label: '日本語'},
         {value: 'ru-RU', label: 'Русский'},
+        {value: 'tr-TR', label: 'Türkçe'}
       ]
     }
   },
