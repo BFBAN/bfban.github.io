@@ -192,7 +192,7 @@ export default {
           let length = quill.getSelection().index;
           // 插入图片 或 插入视频
           if (this.uploadType === 'image') {
-              quill.insertEmbed(length, 'image', "http://bfban.bamket.com/"+res.key)
+              quill.insertEmbed(length, 'image', "https://bfban.glass-panel.workers.dev/bfban.bamket/"+res.key)
             }
             if (this.uploadType === 'video') {
               quill.insertEmbed(length, 'mp4', "http://bfban.bamket.com/"+res.key)
