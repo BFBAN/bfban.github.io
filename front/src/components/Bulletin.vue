@@ -3,15 +3,15 @@
       <Divider>{{$t("home.bulletin.title")}}</Divider>
       <!-- <div class="md" v-html="data"></div> -->
       <div>
-	      <b>{{$t("home.bulletin.webDev")}}:</b> <a href="https://mygoare.com">mygoare</a><br>
+	      <b>{{$t("home.bulletin.webDev")}}:</b> <a href="https://mygoare.com" target="_blank">mygoare</a><br>
 		  
 <!-- <b>{{$t("home.bulletin.bfbanAppD")}}:</b> <a href="https://app.bfban.com/public/www/">cabbagelol</a><br>
 <b>{{$t("home.bulletin.japCon")}}:</b> <a href="https://www.youtube.com/channel/UCptnZeaSNaurVVy9UMWzI6w">RiseJack</a><br>
 <b>{{$t("home.bulletin.engCon")}}:</b> <a href="https://live.bilibili.com/591314">___4Tr1</a><br> -->
 
-          <b>{{$t("home.bulletin.lanCon")}}:</b> <a href="https://live.bilibili.com/591314">SoraKasvgano</a> <a href="https://www.youtube.com/channel/UCptnZeaSNaurVVy9UMWzI6w">RiseJack</a> <a href="#">duck</a> <a href="#">Sgt-Scar</a> <a href="#">KiyakAbi</a><br>
-          <b>{{$t("home.bulletin.domCost")}}:</b> <a href="https://space.bilibili.com/131470523">【NFZ】BoomNextDoor</a><br>
-		  <b>{{$t("home.bulletin.localManager")}}:</b> <a href="https://docs.qq.com/doc/DZFVocWxyTE5tR1lT">PC(exe)</a> <a href="https://manager.gametools.network">Web</a><br>
+          <b>{{$t("home.bulletin.lanCon")}}:</b> <a href="https://live.bilibili.com/591314" target="_blank">SoraKasvgano</a> <a href="https://www.youtube.com/channel/UCptnZeaSNaurVVy9UMWzI6w" target="_blank">RiseJack</a> <a href="https://top.gg/user/498163591216758815" target="_blank">Duck</a> <a href="https://top.gg/user/140391046822494208" target="_blank">iiTZ Arcur</a> <a href="https://space.bilibili.com/44569813/" target="_blank">Sgt-Scar</a> <a href="https://www.youtube.com/channel/UCNj8A90Uo0jM8YZsXkLWO1w" target="_blank">KiyakAbi</a><br>
+          <b>{{$t("home.bulletin.domCost")}}:</b> <a href="https://space.bilibili.com/131470523" target="_blank">【NFZ】BoomNextDoor</a><br>
+		  <b>{{$t("home.bulletin.localManager")}}:</b> <a href="https://docs.qq.com/doc/DZFVocWxyTE5tR1lT" target="_blank">Windows</a> <a href="https://manager.gametools.network" target="_blank">Web</a><br>
 	   </div>
 
   </div>
