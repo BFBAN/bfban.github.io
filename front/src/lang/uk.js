@@ -277,8 +277,9 @@ export default {
     title: 'Cheaters list',
     filters: {
       game: {
-        bf1: 'bf1',
-        bfv: 'bfv',
+        bf1: 'BF1',
+		bf6: 'BF6',
+        bfv: 'BFV',
       },
       status: {
         all: 'all',

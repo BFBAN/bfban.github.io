@@ -279,6 +279,7 @@ export default {
     filters: {
       game: {
         bf1: 'BF1',
+		bf6: 'BF6',
         bfv: 'BFV',
       },
       status: {

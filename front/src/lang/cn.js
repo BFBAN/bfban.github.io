@@ -279,7 +279,8 @@ export default {
     filters: {
       game: {
         bf1: '战地1',
-        bfv: '战地v',
+		bf6: '战地6',
+        bfv: '战地V',
       },
       status: {
         all: '全部',

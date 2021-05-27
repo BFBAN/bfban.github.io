@@ -277,8 +277,9 @@ export default {
     title: 'Rapor listesi',
     filters: {
       game: {
-        bf1: 'bf1',
-        bfv: 'bfv',
+        bf1: 'BF1',
+		bf6: 'BF6',
+        bfv: 'BFV',
       },
       status: {
         all: 'Hepsi',
