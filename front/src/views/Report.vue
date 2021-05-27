@@ -10,7 +10,7 @@
           <RadioGroup v-model="formItem.gameName" type="button">
             <Radio label="bf1"><span>{{ $t('report.info.bf1', { msg: 'bf1' })}}</span></Radio>
             <Radio label="bfv"><span>{{ $t('report.info.bfv', { msg: 'bfv' })}}</span></Radio>
-			<Radio label="bf6"><span>{{ $t('report.info.bfv', { msg: 'bf6' })}}</span></Radio>
+			<Radio label="bf6"><span>{{ $t('report.info.bf6', { msg: 'bf6' })}}</span></Radio>
           </RadioGroup>
         </FormItem>
 
