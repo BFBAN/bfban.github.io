@@ -7,6 +7,9 @@ function getCheatersDB(name) {
     case 'bfv':
       dbName = 'bfv_cheaters';
       break;
+	case 'bf6':
+      dbName = 'bf6_cheaters';
+      break;
     case 'bf4':
       dbName = 'bf4_cheaters';
       break;
@@ -18,7 +21,7 @@ function getCheatersDB(name) {
   return dbName;
 }
 
-const gamesArr = ['bf1', 'bfv'];
+const gamesArr = ['bf1','bf6','bfv'];
 
 function getDatetime() {
   return moment().format('YYYY-MM-DD HH:mm:ss');

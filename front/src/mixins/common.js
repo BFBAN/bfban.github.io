@@ -17,6 +17,9 @@ function convertGameName(name) {
     case '战地1':
       gameName = 'bf1';
       break;
+    case '战地6':
+      gameName = 'bf6';
+      break;
     case '战地4':
       gameName = 'bf4';
       break;
@@ -175,7 +178,7 @@ const cheaterStatus = [
   {
     value: '4',
     "zh-CN": '回收站',
-    "en-US": 'Trash',
+    "en-US": 'Recycle Bin',
     "ja-JP": 'ごみ箱',
     "ru-RU": 'Мусор',
     "tr-TR": 'Çöp',
@@ -198,6 +201,14 @@ const gameName = [
     "ja-JP": 'バトルフィールドV',
     "ru-RU": 'Battlefield 5',
     "tr-TR": 'Battlefield 5',
+  },
+    {
+    value: 'bf6',
+    "zh-CN": '战地6',
+    "en-US": 'Battlefield 6',
+    "ja-JP": 'バトルフィールド6',
+    "ru-RU": 'Battlefield 6',
+    "tr-TR": 'Battlefield 6',
   },
 ];
 

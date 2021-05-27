@@ -63,6 +63,9 @@
               <Tag>
                 {{g.game}}
               </Tag>
+			  <a v-show="`${g.game}` === 'bf1'" target="_blank" :href="`https://gametools.network/stats/pc/name/${cheater.originId}`">
+                GameTools Tracker
+              </a>
               <a v-show="`${g.game}` === 'bf1'" target="_blank" :href="`https://battlefieldtracker.com/bf1/profile/pc/${cheater.originId}`">
                 battlefieldtracker
               </a>
@@ -70,6 +73,15 @@
                 bf1stats
               </a>
               <a v-show="`${g.game}` === 'bfv'" target="_blank" :href="`https://battlefieldtracker.com/bfv/profile/origin/${cheater.originId}`">
+                battlefieldtracker
+              </a>
+			  <a v-show="`${g.game}` === 'bfv'" target="_blank" :href="`https://gametools.network/stats/pc/name/${cheater.originId}`">
+                GameTools Tracker
+              </a>
+			  <a v-show="`${g.game}` === 'bf6'" target="_blank" :href="`https://gametools.network/stats/pc/name/${cheater.originId}`">
+                GameTools Tracker
+              </a>
+			  <a v-show="`${g.game}` === 'bf6'" target="_blank" :href="`https://battlefieldtracker.com/bf6/profile/origin/${cheater.originId}`">
                 battlefieldtracker
               </a>
               <a target="_blank" :href="`https://www.247fairplay.com/CheatDetector/${cheater.originId}`">

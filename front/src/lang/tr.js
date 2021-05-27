@@ -162,6 +162,8 @@ export default {
       bfbanAppD: 'BFBAN mobil uygulaması ',
       japCon: 'Japonca çeviri katkısı',
       engCon: 'İngilizce çeviri katkısı',
+	  lanCon: 'çevirmen',
+	  localManager: 'PC Sunucu Yöneticisi',
       domCost: 'Alan adı sağlayıcı',
     }
   },

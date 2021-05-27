@@ -162,6 +162,8 @@ export default {
       bfbanAppD: 'BFBAN app download',
       japCon: 'Japanese translation contributor',
       engCon: 'English translation contributor',
+	  lanCon: 'Translator',
+	  localManager: 'BF1 Server Manager',
       domCost: 'Domain cost',
     }
   },

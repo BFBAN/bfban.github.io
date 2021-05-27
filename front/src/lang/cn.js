@@ -162,6 +162,8 @@ export default {
       bfbanAppD: 'BFBAN APP下载',
       japCon: '日语翻译者',
       engCon: '英语翻译者',
+	  lanCon: '翻译',
+	  localManager: '战地1服管工具',
       domCost: '支付域名',
     }
   },

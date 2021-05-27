@@ -162,6 +162,8 @@ export default {
       bfbanAppD: 'Скачать приложение BFBAN',
       japCon: 'Japanese translation contributor',
       engCon: 'English translation contributor',
+	  lanCon: 'переводчик',
+	  localManager: 'Менеджер сервера BF1',
       domCost: 'Оплата домена',
     }
   },
