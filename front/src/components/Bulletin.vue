@@ -5,9 +5,10 @@
       <div>
 	      <b>{{$t("home.bulletin.webDev")}}:</b> <a href="https://mygoare.com">mygoare</a><br>
 		  
-//           <b>{{$t("home.bulletin.bfbanAppD")}}:</b> <a href="https://app.bfban.com/public/www/">cabbagelol</a><br>
-//           <b>{{$t("home.bulletin.japCon")}}:</b> <a href="https://www.youtube.com/channel/UCptnZeaSNaurVVy9UMWzI6w">RiseJack</a><br>
-//           <b>{{$t("home.bulletin.engCon")}}:</b> <a href="https://live.bilibili.com/591314">___4Tr1</a><br>
+<!-- <b>{{$t("home.bulletin.bfbanAppD")}}:</b> <a href="https://app.bfban.com/public/www/">cabbagelol</a><br>
+<b>{{$t("home.bulletin.japCon")}}:</b> <a href="https://www.youtube.com/channel/UCptnZeaSNaurVVy9UMWzI6w">RiseJack</a><br>
+<b>{{$t("home.bulletin.engCon")}}:</b> <a href="https://live.bilibili.com/591314">___4Tr1</a><br> -->
+
           <b>{{$t("home.bulletin.lanCon")}}:</b> <a href="https://live.bilibili.com/591314">SoraKasvgano</a> <a href="https://www.youtube.com/channel/UCptnZeaSNaurVVy9UMWzI6w">RiseJack</a> <a href="#">duck</a> <a href="#">Sgt-Scar</a> <a href="#">KiyakAbi</a><br>
           <b>{{$t("home.bulletin.domCost")}}:</b> <a href="https://space.bilibili.com/131470523">【NFZ】BoomNextDoor</a><br>
 		  <b>{{$t("home.bulletin.localManager")}}:</b> <a href="https://docs.qq.com/doc/DZFVocWxyTE5tR1lT">PC(exe)</a> <a href="https://manager.gametools.network">Web</a><br>
