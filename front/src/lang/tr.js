@@ -78,6 +78,7 @@ export default {
 	  	reportNews:'BFV ve BF1 hilelerini bildirme işlevi sunuyoruz！',
 	  	bf1:'battlefield 1',
 	  	bfv:'battlefield 5',
+		bf6:'battlefield 6',
 	  	idNotion1:'Bir seferde yalnızca bir kimliği bildirebilirsiniz, klan adını yazmayın, kendi origin kimliğinizi yazmayın.',
 	  	idNotion2:'Orijin kimliğinin küçük harf ve büyük harf için eşleşmesi yoktur， ancak tanımlamalısınız i I 1 l L o O 0， bu karakterlere dikkat ediniz.',
 	  	uploadManual1:'Bilibili ve Youtube gibi video sitelerine üye olmak istemiyorsanız şu adrese gidebilirsiniz',

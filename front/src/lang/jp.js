@@ -78,6 +78,7 @@ export default {
       reportNews:'私たちはチーターを報告・情報共有する機能を提供します！',
       bf1:'Battlefield 1',
       bfv:'Battlefield 5',
+	  bf6:'Battlefield 6',
       idNotion1:'一度に1つのIDのみを報告できます。小隊名を含めないでください。また、あなたのIDを記入しないでください。',
       idNotion2:'アルファベットの文字小文字は区別されませんが、i I 1 l L o O 0に注意してください。',
       uploadManual1:'BilibiliやYoutubeなどの動画サイトに登録したくない場合は→',

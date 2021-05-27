@@ -78,6 +78,7 @@ export default {
 	  	reportNews:'已经支持 战地V 举报啦！',
 	  	bf1:'战地1',
 	  	bfv:'战地5',
+		bf6:'战地6',
 	  	idNotion1:'一次只填写一个ID，不要把战队名字写进来，不要写成自己的ID',
 	  	idNotion2:'游戏ID是不区分大小写的，但请特别注意区分 i I 1 l L o O 0，正确填写举报ID',
 	  	uploadManual1:'不想注册国内账号、嫌麻烦，上传视频可以前往',

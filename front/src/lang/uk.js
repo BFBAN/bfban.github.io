@@ -78,6 +78,7 @@ export default {
 	  	reportNews:'We offer the function to report BFV hackers！',
 	  	bf1:'battlefield 1',
 	  	bfv:'battlefield 5',
+		bf6:'battlefield 6',
 	  	idNotion1:'You can only report one ID one time，do not write the platoon name，do not write your ID',
 	  	idNotion2:'Origin ID has no match for lower case and upper case，but you must identify i I 1 l L o O 0，offer correct ID',
 	  	uploadManual1:'if you do not want to register video site member such as Bilibili and Youtube,you can go to',
