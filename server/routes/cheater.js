@@ -15,6 +15,7 @@ const {
   gamesArr, getDatetime, getDatetimeWithTZ, addOneDay, convertDatetimeToTimeZone,
 } = require('../libs/misc');
 const { getUserInfo } = require('../libs/origin');
+const { getBattleLogUserInfo } = require('../libs/battleLog');
 
 // csrf protection
 const csrfProtection = csrf({ cookie: true });
@@ -68,7 +69,10 @@ async function verifyGameIdComplete(req, res, next) {
   } = req.body;
 
   try {
-    const userInfo = await getUserInfo({ originId });
+    let userInfo = await getUserInfo({ originId });
+    if (userInfo.error) {
+      userInfo = await getBattleLogUserInfo({ originId });
+    }
 
     if (userInfo.error) {
       return res.json({
@@ -334,7 +338,7 @@ router.post('/', verifyJWTMiddleware, [
   check('originPersonaId').not().isEmpty(),
   check('avatarLink').not().isEmpty(),
 ],
-// 二次确认 originUserId, originPersonaId 与 EAID 无误
+// 二次确认 UserId, PersonaId 未被人为篡改，确保数据一致性
 verifyGameIdComplete,
 async (req, res, next) => {
   const errors = validationResult(req);
@@ -590,11 +594,11 @@ async (req, res, next) => {
   const {
     cheaterId, userId, toUserId, content, toFloor, originUserId,
   } = req.body;
-  
+
   if (userId !== req.user.userId) {
     return res.status(200).json({ error: 1, msg: 'UserId is not yours!', errors: [] });
   }
-  
+
   const d = getDatetime();
 
   const values = {
