@@ -7,6 +7,7 @@ const { check, validationResult } = require('express-validator/check');
 const { verifyJWTMiddleware, verifyAdminPrivilegeMiddleware } = require('../middlewares/auth');
 const { addOneDay, convertDatetimeToTimeZone } = require('../libs/misc');
 const { getUserInfo } = require('../libs/origin');
+const { getBattleLogUserInfo } = require('../libs/battleLog');
 
 const router = express.Router();
 
@@ -57,8 +58,15 @@ router.post('/checkGameIdExist', [
 
   const { id } = req.body;
 
-  const userInfo = await getUserInfo({ originId: id });
+  // getUserInfo through origin.com
+  let userInfo = await getUserInfo({ originId: id });
   console.log('userInfo:', userInfo);
+
+  if (userInfo.error) {
+    // getUserInfo through battleLog
+    userInfo = await getBattleLogUserInfo({originId: id});
+  }
+  console.log('battleLoguserInfo:', userInfo);
 
   const idExist = !userInfo.error;
 
