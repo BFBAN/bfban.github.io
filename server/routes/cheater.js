@@ -207,7 +207,7 @@ async function getCheater(res, cheaterOUId) {
   await db.query('update cheaters set `n` = (`n`+1) where originUserId = ?', [cheaterOUId]);
 
   const cheater = await db.query(`select
-    id, n, originId, status, cheatMethods, bf1statsShot, trackerShot, trackerWeaponShot, avatarLink, commentsNum, createDatetime, updateDatetime, originUserId
+    id, n, originId, status, cheatMethods, bf1statsShot, trackerShot, trackerWeaponShot, avatarLink, commentsNum, createDatetime, updateDatetime, originUserId, originPersonaId
     from cheaters
     where originUserId = ? and valid='1'`,
   [cheaterOUId]);
