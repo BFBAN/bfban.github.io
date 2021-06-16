@@ -11,7 +11,7 @@
 
           <b>{{$t("home.bulletin.lanCon")}}:</b> <a href="https://live.bilibili.com/591314" target="_blank">SoraKasvgano</a> <a href="https://www.youtube.com/channel/UCptnZeaSNaurVVy9UMWzI6w" target="_blank">RiseJack</a> <a href="https://top.gg/user/498163591216758815" target="_blank">Duck</a> <a href="https://top.gg/user/140391046822494208" target="_blank">Arcur</a> <a href="https://space.bilibili.com/44569813/" target="_blank">Sgt-Scar</a> <a href="https://www.youtube.com/channel/UCNj8A90Uo0jM8YZsXkLWO1w" target="_blank">KiyakAbi</a><br>
           <b>{{$t("home.bulletin.domCost")}}:</b> <a href="https://space.bilibili.com/131470523" target="_blank">【NFZ】BoomNextDoor</a><br>
-		  <b>{{$t("home.bulletin.localManager")}}:</b> <a href="https://docs.qq.com/doc/DZFVocWxyTE5tR1lT" target="_blank">Windows</a> <span>/</span> <a href="https://manager.gametools.network" target="_blank">Web</a> <span>/</span> <a href="https://suzubucket.cc/bot-python/" target="_blank">QQbot</a><br>
+		  <b>{{$t("home.bulletin.localManager")}}:</b> <a href="https://manager.gametools.network" target="_blank">Web Panel</a> <span>/</span> <a href="https://docs.qq.com/doc/DZFVocWxyTE5tR1lT" target="_blank">Windows Program(zh-cn)</a> <span>/</span> <a href="https://suzubucket.cc/bot-python/" target="_blank">QQ Bot(zh-cn)</a><br>
 	   </div>
 
   </div>
