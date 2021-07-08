@@ -6,6 +6,7 @@ const _ = require('underscore');
 const path = require('path');
 const { check, validationResult } = require('express-validator/check');
 const { baseDir } = require('../config');
+const gametools = require('../libs/gametoolslist')
 
 const { verifyJWTMiddleware, verifyAdminPrivilegeMiddleware } = require('../middlewares/auth');
 const db = require('../mysql');
@@ -72,6 +73,10 @@ async function verifyGameIdComplete(req, res, next) {
     let userInfo = await getUserInfo({ originId });
     if (userInfo.error) {
       userInfo = await getBattleLogUserInfo({ originId });
+    }
+    
+    if (userInfo.error) {
+      userInfo = await gametools.getGametoolsUserList({ originId });
     }
 
     if (userInfo.error) {

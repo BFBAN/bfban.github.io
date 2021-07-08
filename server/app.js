@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
+const mongo = require('./mongo');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const pino = require('pino')({
@@ -105,14 +106,14 @@ process.on('unhandledRejection', (error) => {
 });
 
 
-// mongoConnection.on('error', console.error.bind(console, 'mongodb connection error!!'));
-// mongoConnection.once('open', () => {
-//   // db connected
-//   console.log('mongodb connected...');
+mongo.mongoConnection.on('error', console.error.bind(console, 'mongodb connection error!!'));
+mongo.mongoConnection.once('open', () => {
+  // db connected
+  console.log('mongodb connected...');
 
-//   // app start
-//   app.listen(port, () => console.log(`app listen on port ${port}...`));
-// });
+  // app start
+  // app.listen(port, () => console.log(`app listen on port ${port}...`));
+});
 
 
 if (!module.parent) {

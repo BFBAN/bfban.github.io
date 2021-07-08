@@ -2,13 +2,13 @@ const express = require('express');
 const csrf = require('csurf');
 const moment = require('moment');
 const { check, validationResult } = require('express-validator/check');
+const gametools = require('../libs/gametoolslist')
 
 // const { checkGameIdExist } = require('../libs/webshot');
 const { verifyJWTMiddleware, verifyAdminPrivilegeMiddleware } = require('../middlewares/auth');
 const { addOneDay, convertDatetimeToTimeZone } = require('../libs/misc');
 const { getUserInfo } = require('../libs/origin');
 const { getBattleLogUserInfo } = require('../libs/battleLog');
-
 const router = express.Router();
 
 // cors options
@@ -67,6 +67,11 @@ router.post('/checkGameIdExist', [
     userInfo = await getBattleLogUserInfo({originId: id});
   }
   console.log('battleLoguserInfo:', userInfo);
+
+  if (userInfo.error) {
+    userInfo = await gametools.getGametoolsUserList({ originId: id });
+  }
+  console.log('gametoolsUserInfo:', userInfo)
 
   const idExist = !userInfo.error;
 
