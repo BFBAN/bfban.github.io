@@ -65,10 +65,12 @@ function capture(originId, cheaterUId) {
 }
 
 async function verifyGameIdComplete(req, res, next) {
-  const {
+  let {
     originId, originUserId, originPersonaId, avatarLink,
   } = req.body;
-
+  originUserId = originUserId.toString();
+  originPersonaId = originPersonaId.toString();
+  
   try {
     let userInfo = await getUserInfo({ originId });
     if (userInfo.error) {
@@ -351,11 +353,11 @@ async (req, res, next) => {
     return res.status(200).json({ error: 1, msg: '请规范填写', errors: errors.array() });
   }
 
-  const {
-    gameName, originId, cheatMethods, bilibiliLink, description, originUserId,
+  let { gameName, originId, cheatMethods, bilibiliLink, description, originUserId,
     originPersonaId, avatarLink,
   } = req.body;
-
+  originUserId = originUserId.toString();
+  originPersonaId = originPersonaId.toString();
   const { userId } = req.user;
 
   const re = await db.query('select * from cheaters where originUserId = ?', [originUserId]);
