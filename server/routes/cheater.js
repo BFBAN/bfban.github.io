@@ -65,12 +65,10 @@ function capture(originId, cheaterUId) {
 }
 
 async function verifyGameIdComplete(req, res, next) {
-  let {
+  const {
     originId, originUserId, originPersonaId, avatarLink,
   } = req.body;
-  originUserId = originUserId.toString();
-  originPersonaId = originPersonaId.toString();
-  
+
   try {
     let userInfo = await getUserInfo({ originId });
     if (userInfo.error) {
@@ -341,8 +339,8 @@ router.post('/', verifyJWTMiddleware, [
   // check('captcha').not().isEmpty().isLength({ min: 4, max: 4 }),
   check('description').not().isEmpty(),
 
-  check('originUserId').not().isEmpty().trim(),
-  check('originPersonaId').not().isEmpty().trim(),
+  check('originUserId').not().isEmpty(),
+  check('originPersonaId').not().isEmpty(),
   check('avatarLink').not().isEmpty(),
 ],
 // 二次确认 UserId, PersonaId 未被人为篡改，确保数据一致性
@@ -353,11 +351,11 @@ async (req, res, next) => {
     return res.status(200).json({ error: 1, msg: '请规范填写', errors: errors.array() });
   }
 
-  let { gameName, originId, cheatMethods, bilibiliLink, description, originUserId,
+  const {
+    gameName, originId, cheatMethods, bilibiliLink, description, originUserId,
     originPersonaId, avatarLink,
   } = req.body;
-  originUserId = originUserId.toString();
-  originPersonaId = originPersonaId.toString();
+
   const { userId } = req.user;
 
   const re = await db.query('select * from cheaters where originUserId = ?', [originUserId]);

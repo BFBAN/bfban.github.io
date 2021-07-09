@@ -6,8 +6,8 @@ async function getGametoolsUserList({originId}) {
     let player = await mongo.player.findOne({ playerName: originId }).exec();
     let avatar = await origin.getUserAvatar({ pid: player.userId });
     return {
-      userId: player.userId,
-      personaId: player._id,
+      userId: player.userId.toString(),
+      personaId: player._id.toString(),
       personaName: player.playerName,
       avatarLink: avatar
     }
