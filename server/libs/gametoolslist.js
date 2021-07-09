@@ -9,7 +9,7 @@ async function getGametoolsUserList({originId}) {
       userId: player.userId,
       personaId: player._id,
       personaName: player.playerName,
-      avatar: avatar
+      avatarLink: avatar
     }
   } catch (e) {
     return {
