@@ -339,8 +339,8 @@ router.post('/', verifyJWTMiddleware, [
   // check('captcha').not().isEmpty().isLength({ min: 4, max: 4 }),
   check('description').not().isEmpty(),
 
-  check('originUserId').not().isEmpty(),
-  check('originPersonaId').not().isEmpty(),
+  check('originUserId').not().isEmpty().trim(),
+  check('originPersonaId').not().isEmpty().trim(),
   check('avatarLink').not().isEmpty(),
 ],
 // 二次确认 UserId, PersonaId 未被人为篡改，确保数据一致性
