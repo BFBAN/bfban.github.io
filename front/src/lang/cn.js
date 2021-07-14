@@ -65,6 +65,7 @@ export default {
 	  },
     messages: {
       fillEverything: '请填写完整',
+	    pleaseExplain: '请详细解释您的裁决',
       replySuccess: '回复成功',
       signIn: '请登录',
       updateComplete: '更新完成',

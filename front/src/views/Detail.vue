@@ -556,6 +556,10 @@ export default {
         this.$Message.warning(this.$i18n.t('detail.messages.fillEverything'));
         return false;
       }
+      if ( (status==='3' || status==='4') && suggestion.trim().length < 5 ) {
+        this.$Message.warining(this.$i18n.t('detail.messages.pleaseExplain'));
+        return false;
+      }
 
       // JUST before ajax
       this.verifySpinShow = true;
