@@ -66,6 +66,7 @@ export default {
     messages: {
       fillEverything: 'Lütfen her şeyi doldurun',
       pleaseExplain: 'Please explian your decision in details',
+      dontDoIt: 'Do not just give a ',
       replySuccess: 'Cevabınız başarıyla eklendi',
       signIn: 'lütfen Giriş yapın',
       updateComplete: 'Güncelleme başarılı',

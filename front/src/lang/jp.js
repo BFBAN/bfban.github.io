@@ -66,6 +66,7 @@ export default {
     messages: {
       fillEverything: 'すべて記入してください',
       pleaseExplain: 'Please explian your decision in details',
+      dontDoIt: 'Do not just give a ',
       replySuccess: '返信しました',
       signIn: 'サインインしてください',
       updateComplete: '更新しました',

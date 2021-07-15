@@ -556,11 +556,14 @@ export default {
         this.$Message.warning(this.$i18n.t('detail.messages.fillEverything'));
         return false;
       }
-      if ( (status==='3' || status==='4') && suggestion.trim().length < 5 ) {
+      if ( (status==='3' || status==='4') && suggestion.trim().length < 5 ) { // too short
         this.$Message.warning(this.$i18n.t('detail.messages.pleaseExplain'));
         return false;
       }
-
+      if( '0123456789abcedfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,-_'.split('').indexOf(suggestion.trim()) != -1) { // one letter suggestion
+        this.$Message.warning(this.$i18n.t('detail.messages.dontDoIt')+suggestion);
+        return false;
+      }
       // JUST before ajax
       this.verifySpinShow = true;
       const {data: statusData} = await ajax({

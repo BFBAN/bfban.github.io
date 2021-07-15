@@ -66,6 +66,7 @@ export default {
     messages: {
       fillEverything: 'Please fill in everything',
       pleaseExplain: 'Please explian your decision in details',
+      dontDoIt: 'Do not just give a ',
       replySuccess: 'Your reply was successfully added',
       signIn: 'Please sign in',
       updateComplete: 'Update completed',
