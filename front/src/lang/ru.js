@@ -61,7 +61,12 @@ export default {
       action: 'Action',
       operatingTime: 'Operating Time',
       writeSomething: 'Write something',
-      giveOpinion: 'What\'s your opinion?'
+      giveOpinion: 'What\'s your opinion?',
+      fastReplies: {
+        stats: 'Abnormal player stats',
+        evidencePic: 'As the evidence showed in the picture',
+        evidenceVid: 'As the evidence showed in the video'
+      }
     },
     messages: {
       fillEverything: 'Please fill in everything',

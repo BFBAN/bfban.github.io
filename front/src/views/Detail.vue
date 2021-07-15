@@ -371,6 +371,14 @@
               <Input @on-keydown="handleCmdEnter($event, 'verify')" v-model="verify.suggestion" type="textarea" :autosize="{minRows: 2}" :placeholder="$t('detail.info.writeSomething')" />
             </FormItem>
 
+            <FormItem v-show="verify.status === '1'" label="fastReply">
+              <CheckboxGroup v-model="fastReply.selected">
+                <Checkbox v-for="content in fastReply.content" :key='content' :label="content">
+                  {{$t(`detail.info.fastReplies.${content}`)}}
+                </Checkbox>
+              </CheckboxGroup>
+            </FormItem>
+
             <FormItem>
               <Button type="primary" @click.stop.prevent="doVerify">{{ $t('detail.info.commit', { msg: 'commit' })}}</Button>
             </FormItem>
@@ -454,11 +462,19 @@ export default {
 
       cheatMethodsGlossary,
 
+      fastReply: {
+        content: ['stats', 'evidencePic', 'evidenceVid'],
+        selected: [],
+      },
+
       updateUserInfospinShow: false,
     }
   },
   watch: {
     '$route': 'loadData',
+    'fastReply.selected': function() { 
+      this.verify.suggestion = ''+this.fastReply.selected.map(i=>this.$t(`detail.info.fastReplies.${i}`)); 
+    }
   },
   created() {
     this.loadData();

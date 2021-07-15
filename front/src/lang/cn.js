@@ -62,6 +62,11 @@ export default {
       operatingTime: '工作时间',
       writeSomething: '写一些东西',
       giveOpinion: '你怎么看？',
+      fastReplies: {
+        stats: '玩家数据异常',
+        evidencePic: '证据如图所示',
+        evidenceVid: '证据如视频所示'
+      }
 	  },
     messages: {
       fillEverything: '请填写完整',

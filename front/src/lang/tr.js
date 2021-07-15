@@ -61,7 +61,12 @@ export default {
       action: 'Aksiyon',
       operatingTime: 'Operasyon zamanı',
       writeSomething: 'hileci yöntemi hakkında yorum yaz',
-      giveOpinion: 'Senin düşüncen nedir?'
+      giveOpinion: 'Senin düşüncen nedir?',
+      fastReplies: {
+        stats: 'Abnormal player stats',
+        evidencePic: 'As the evidence showed in the picture',
+        evidenceVid: 'As the evidence showed in the video'
+      }
     },
     messages: {
       fillEverything: 'Lütfen her şeyi doldurun',

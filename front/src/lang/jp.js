@@ -62,6 +62,11 @@ export default {
       operatingTime: '日時',
       writeSomething: '記入してください',
       giveOpinion: '動画や画像のリンクを記入してください',
+      fastReplies: {
+        stats: 'Abnormal player stats',
+        evidencePic: 'As the evidence showed in the picture',
+        evidenceVid: 'As the evidence showed in the video'
+      }
     },
     messages: {
       fillEverything: 'すべて記入してください',
